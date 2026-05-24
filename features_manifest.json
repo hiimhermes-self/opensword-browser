@@ -45,7 +45,7 @@
     "id": 7,
     "name": "history_search",
     "title": "Gelişmiş Geçmiş Arama",
-    "status": "pending",
+    "status": "done",
     "description": "Ctrl+H ile geçmişi ara ve filtrele."
   },
   {
