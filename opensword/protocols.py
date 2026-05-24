@@ -2,3 +2,4 @@
 # IPFS protokol isleyici taslagi.
 # Gemini protokol isleyici taslagi.
 # Magnet link destegi eklendi.
+# Dat protokol yer tutucu.

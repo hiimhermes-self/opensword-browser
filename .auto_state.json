@@ -1,5 +1,5 @@
 {
-  "cat_idx": 8,
+  "cat_idx": 9,
   "ui_idx": 4,
   "ai_idx": 4,
   "opt_idx": 4,
@@ -7,6 +7,6 @@
   "brand_idx": 4,
   "i18n_idx": 4,
   "sec_idx": 4,
-  "proto_idx": 3,
+  "proto_idx": 4,
   "doc_idx": 3
 }
