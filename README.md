@@ -85,6 +85,9 @@ Sağ panelden API sağlayıcınızı ve anahtarınızı yapılandırın. Yakınd
 - Favicon onbellek
 - Hafif QtWebEngine profili
 
+
+Gelecek planlari icin [ROADMAP.md](./ROADMAP.md) dosyasina goz atin.
+
 ## Guvenlik
 
 - DoNotTrack basligi varsayilan olarak etkin
