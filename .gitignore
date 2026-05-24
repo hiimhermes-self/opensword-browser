@@ -28,3 +28,9 @@ env/
 *.swo
 *~
 .DS_Store
+*.log
+*.pdf
+/dist/
+/build/
+.env
+.env.local
