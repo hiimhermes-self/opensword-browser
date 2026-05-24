@@ -325,6 +325,7 @@ class BrowserWindow(QMainWindow):
         QShortcut(QKeySequence("Ctrl+D"), self).activated.connect(self.add_bookmark)
         QShortcut(QKeySequence("Ctrl+L"), self).activated.connect(self.address_bar.setFocus)
         QShortcut(QKeySequence("F12"), self).activated.connect(self.dev_tools)
+        QShortcut(QKeySequence("F11"), self).activated.connect(self.toggle_fullscreen)
         QShortcut(QKeySequence("Ctrl+F"), self).activated.connect(self.show_find_bar)
 
         self.closed_tabs = []
@@ -584,6 +585,16 @@ class BrowserWindow(QMainWindow):
             from PySide6.QtWebEngineWidgets import QWebEngineView
             tab.page().printToPdf("/tmp/opensword_page.pdf")
             self.status.showMessage("PDF yazdirildi: /tmp/opensword_page.pdf", 4000)
+
+    def toggle_fullscreen(self):
+        if self.isFullScreen():
+            self.showNormal()
+            self.statusBar().show()
+            self.toolbar.show()
+        else:
+            self.showFullScreen()
+            self.statusBar().hide()
+            self.toolbar.hide()
 
     def dev_tools(self):
         tab = self.current_tab()
