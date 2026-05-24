@@ -17,7 +17,7 @@
     "id": 3,
     "name": "ad_blocker",
     "title": "Temel Reklam Engelleyici",
-    "status": "pending",
+    "status": "done",
     "description": "Basit bir hosts-tabanlı reklam engelleme."
   },
   {
