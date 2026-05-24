@@ -76,6 +76,14 @@ Sağ panelden API sağlayıcınızı ve anahtarınızı yapılandırın. Yakınd
 ![OpenSword Hizli Erisim](docs/screenshot.png)
 
 
+
+## Guvenlik
+
+- DoNotTrack basligi varsayilan olarak etkin
+- Basit reklam engelleme (host tabanli)
+- Sifreli API anahtari saklama (hazirlik)
+- HTTPS-Only modu bayragi
+
 ## Mimari
 
 OpenSword, moduler bir yapiya sahiptir:
