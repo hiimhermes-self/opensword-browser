@@ -578,6 +578,13 @@ class BrowserWindow(QMainWindow):
         if self._find_bar.isVisible():
             self._find_input.setFocus()
 
+    def print_page(self):
+        tab = self.current_tab()
+        if tab:
+            from PySide6.QtWebEngineWidgets import QWebEngineView
+            tab.page().printToPdf("/tmp/opensword_page.pdf")
+            self.status.showMessage("PDF yazdirildi: /tmp/opensword_page.pdf", 4000)
+
     def dev_tools(self):
         tab = self.current_tab()
         if tab:
