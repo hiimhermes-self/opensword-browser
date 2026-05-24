@@ -270,6 +270,18 @@ class BrowserWindow(QMainWindow):
         self.btn_menu.setStyleSheet(self._btn_style())
         self.btn_menu.setToolTip("Menü")
         self.btn_menu.clicked.connect(self.show_menu)
+
+        self.btn_zoom_in = QPushButton("+")
+        self.btn_zoom_in.setStyleSheet(self._btn_style())
+        self.btn_zoom_in.setToolTip("Yakinlastir (Ctrl++)")
+        self.btn_zoom_in.clicked.connect(self.zoom_in)
+        self.toolbar.addWidget(self.btn_zoom_in)
+
+        self.btn_zoom_out = QPushButton("-")
+        self.btn_zoom_out.setStyleSheet(self._btn_style())
+        self.btn_zoom_out.setToolTip("Uzaklastir (Ctrl+-)")
+        self.btn_zoom_out.clicked.connect(self.zoom_out)
+        self.toolbar.addWidget(self.btn_zoom_out)
         self.toolbar.addWidget(self.btn_menu)
 
         # Bookmarks bar
@@ -538,6 +550,16 @@ class BrowserWindow(QMainWindow):
             "Açık kaynak, AI-native, hızlı ve modüler web tarayıcısı.<br>"
             "Rakipler: Dia Browser, Perplexity Comet<br>"
             "Fark: %100 açık kaynak, yerel AI entegrasyonu, topluluk gücü.")
+
+    def zoom_in(self):
+        tab = self.current_tab()
+        if tab:
+            tab.setZoomFactor(tab.zoomFactor() + 0.1)
+
+    def zoom_out(self):
+        tab = self.current_tab()
+        if tab:
+            tab.setZoomFactor(max(0.25, tab.zoomFactor() - 0.1))
 
     def dev_tools(self):
         tab = self.current_tab()

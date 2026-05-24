@@ -1,12 +1,4 @@
 {
-  "cat_idx": 1,
-  "ui_idx": 8,
-  "ai_idx": 8,
-  "opt_idx": 8,
-  "dev_idx": 8,
-  "brand_idx": 8,
-  "i18n_idx": 8,
-  "sec_idx": 8,
-  "proto_idx": 8,
-  "doc_idx": 8
+  "epoch": 1,
+  "idx": 1
 }
