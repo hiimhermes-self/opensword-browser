@@ -2,22 +2,21 @@
 # SPDX-License-Identifier: Apache-2.0
 """OpenSword Browser — Modern, AI-native, open-source web browser."""
 import json
-import os
 import sys
 from pathlib import Path
 import importlib.util
 from urllib.parse import urlparse
 
-from PySide6.QtCore import QUrl, Qt, Slot, QSize, QSettings, QTimer
-from PySide6.QtGui import QKeySequence, QAction, QShortcut, QIcon, QFont, QColor
+from PySide6.QtCore import QUrl, Qt, Slot, QTimer
+from PySide6.QtGui import QKeySequence, QShortcut, QFont
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QLineEdit, QPushButton, QTabWidget, QToolBar, QStatusBar,
-    QSplitter, QTextEdit, QComboBox, QLabel, QFrame, QMenu, QDialog,
+    QSplitter, QTextEdit, QComboBox, QLabel, QMenu, QDialog,
     QDialogButtonBox, QPlainTextEdit, QFileDialog, QMessageBox
 )
 from PySide6.QtWebEngineWidgets import QWebEngineView, QWebEnginePage
-from PySide6.QtWebEngineCore import QWebEngineProfile, QWebEngineSettings, QWebEngineDownloadRequest
+from PySide6.QtWebEngineCore import QWebEngineProfile, QWebEngineDownloadRequest
 
 
 CONFIG_DIR = Path.home() / ".config" / "opensword"
