@@ -3,3 +3,4 @@
 # TODO: Secili metin cevirisi icin hazirlik.
 # TODO: Kod asistani paneli eklendi.
 # TODO: Sag tik AI aksiyonlari eklendi.
+# TODO: AI prompt sablonlari eklendi.
