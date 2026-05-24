@@ -94,7 +94,7 @@
     "id": 14,
     "name": "download_manager",
     "title": "Gelişmiş İndirme Yöneticisi",
-    "status": "pending",
+    "status": "done",
     "description": "İndirmeleri listeleyen ve yöneten pencere."
   },
   {
