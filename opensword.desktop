@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=OpenSword Browser
+Comment=AI-native open source browser
+Exec=python -m opensword.browser
+Icon=branding/logo.svg
+Type=Application
+Categories=Network;WebBrowser;
