@@ -4,3 +4,4 @@
 # Izin yoneticisi taslagi eklendi.
 # CSP politika olusturucu eklendi.
 # Sifre yoneticisi taslagi eklendi.
+# Sertifika goruntuleyici yer tutucu.
