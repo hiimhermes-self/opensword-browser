@@ -5,6 +5,7 @@ import json
 import os
 import sys
 from pathlib import Path
+import importlib.util
 from urllib.parse import urlparse
 
 from PySide6.QtCore import QUrl, Qt, Slot, QSize, QSettings, QTimer
@@ -318,6 +319,21 @@ class BrowserWindow(QMainWindow):
         self.add_tab(self.settings_data.get("home", "https://duckduckgo.com"))
 
         self.apply_dark_theme()
+        self.load_features()
+
+    def load_features(self):
+        features_dir = Path(__file__).parent / "features"
+        if not features_dir.exists():
+            return
+        for f in sorted(features_dir.glob("feature_*.py")):
+            try:
+                spec = importlib.util.spec_from_file_location(f.stem, f)
+                mod = importlib.util.module_from_spec(spec)
+                spec.loader.exec_module(mod)
+                if hasattr(mod, "register"):
+                    mod.register(self)
+            except Exception as e:
+                print(f"[OpenSword Feature Error] {f.name}: {e}")
 
     def _btn_style(self, bg="#222", fg="#eee"):
         return f"background:{bg};color:{fg};padding:6px 10px;border:none;border-radius:4px;font-size:14px;"

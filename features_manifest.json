@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "name": "vertical_tabs",
+    "title": "Dikey Sekmeler",
+    "status": "done",
+    "description": "Sekmeleri sol tarafta dikey bir panelde göster."
+  },
+  {
+    "id": 2,
+    "name": "speed_dial",
+    "title": "Hızlı Erişim Sayfası",
+    "status": "pending",
+    "description": "Yeni sekme açıldığında hızlı erişim kareleri göster."
+  },
+  {
+    "id": 3,
+    "name": "ad_blocker",
+    "title": "Temel Reklam Engelleyici",
+    "status": "pending",
+    "description": "Basit bir hosts-tabanlı reklam engelleme."
+  },
+  {
+    "id": 4,
+    "name": "tab_sleep",
+    "title": "Sekme Uyku Modu",
+    "status": "pending",
+    "description": "Uzun süre kullanılmayan sekmeleri askıya al."
+  },
+  {
+    "id": 5,
+    "name": "tab_preview",
+    "title": "Sekme Önizlemesi",
+    "status": "pending",
+    "description": "Sekme üzerine gelindiğinde küçük ekran görüntüsü."
+  },
+  {
+    "id": 6,
+    "name": "split_view",
+    "title": "İki Bölmeli Görünüm",
+    "status": "pending",
+    "description": "Aynı pencerede iki sekmeyi yan yana göster."
+  },
+  {
+    "id": 7,
+    "name": "history_search",
+    "title": "Gelişmiş Geçmiş Arama",
+    "status": "pending",
+    "description": "Ctrl+H ile geçmişi ara ve filtrele."
+  },
+  {
+    "id": 8,
+    "name": "pdf_viewer",
+    "title": "Yerel PDF Görüntüleyici",
+    "status": "pending",
+    "description": "PDF dosyalarını harici uygulama yerine tarayıcıda aç."
+  },
+  {
+    "id": 9,
+    "name": "userscripts",
+    "title": "Userscript Desteği",
+    "status": "pending",
+    "description": "Greasemonkey tarzı kullanıcı betikleri çalıştır."
+  },
+  {
+    "id": 10,
+    "name": "tab_search",
+    "title": "Sekme Hızlı Arama",
+    "status": "pending",
+    "description": "Ctrl+Shift+F ile açılan sekmeler arasında arama."
+  },
+  {
+    "id": 11,
+    "name": "web_sidebar",
+    "title": "Web Yan Paneli",
+    "status": "pending",
+    "description": "Sol tarafta sabit bir web paneli (sosyal medya, notlar)."
+  },
+  {
+    "id": 12,
+    "name": "auto_dark",
+    "title": "Otomatik Koyu Mod",
+    "status": "pending",
+    "description": "Sistem temasına göre otomatik aydınlık/koyu geçişi."
+  },
+  {
+    "id": 13,
+    "name": "reader_mode",
+    "title": "Okuma Modu",
+    "status": "pending",
+    "description": "Makaleleri sadeleştirilmiş, okunabilir formata dönüştür."
+  },
+  {
+    "id": 14,
+    "name": "download_manager",
+    "title": "Gelişmiş İndirme Yöneticisi",
+    "status": "pending",
+    "description": "İndirmeleri listeleyen ve yöneten pencere."
+  },
+  {
+    "id": 15,
+    "name": "workspace",
+    "title": "Çalışma Alanları",
+    "status": "pending",
+    "description": "Farklı sekme gruplarını kaydet ve hızlıca geçiş yap."
+  }
+]
