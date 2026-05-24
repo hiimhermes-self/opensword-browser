@@ -4,3 +4,4 @@
 # TODO: Kod asistani paneli eklendi.
 # TODO: Sag tik AI aksiyonlari eklendi.
 # TODO: AI prompt sablonlari eklendi.
+# TODO: Ollama baglanti kontrolu eklendi.
