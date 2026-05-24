@@ -327,6 +327,7 @@ class BrowserWindow(QMainWindow):
         QShortcut(QKeySequence("Ctrl+L"), self).activated.connect(self.address_bar.setFocus)
         QShortcut(QKeySequence("F12"), self).activated.connect(self.dev_tools)
         QShortcut(QKeySequence("Ctrl+F"), self).activated.connect(self.show_find_bar)
+        QShortcut(QKeySequence("Ctrl+F"), self).activated.connect(self.show_find_bar)
         QShortcut(QKeySequence("F11"), self).activated.connect(self.toggle_fullscreen)
         QShortcut(QKeySequence("Ctrl+F"), self).activated.connect(self.show_find_bar)
 
@@ -609,6 +610,22 @@ class BrowserWindow(QMainWindow):
             if path:
                 tab.page().save(path, format=QWebEngineDownloadRequest.MimeHtmlSaveFormat)
                 self.status.showMessage(f"Sayfa kaydedildi: {path}", 3000)
+
+    def show_find_bar(self):
+        from PySide6.QtWidgets import QLineEdit, QHBoxLayout, QWidget
+        if not hasattr(self, "_find_bar"):
+            self._find_bar = QWidget(self)
+            layout = QHBoxLayout(self._find_bar)
+            layout.setContentsMargins(4, 2, 4, 2)
+            self._find_input = QLineEdit()
+            self._find_input.setPlaceholderText("Sayfada ara...")
+            self._find_input.setStyleSheet("background:#222;color:#eee;padding:4px;")
+            self._find_input.returnPressed.connect(lambda: self.current_tab().page().findText(self._find_input.text()))
+            layout.addWidget(self._find_input)
+            self.browser_container.layout().addWidget(self._find_bar)
+        self._find_bar.setVisible(not self._find_bar.isVisible())
+        if self._find_bar.isVisible():
+            self._find_input.setFocus()
 
     def show_find_bar(self):
         from PySide6.QtWidgets import QLineEdit, QHBoxLayout, QWidget
