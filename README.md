@@ -77,6 +77,14 @@ Sağ panelden API sağlayıcınızı ve anahtarınızı yapılandırın. Yakınd
 
 
 
+
+## Performans
+
+- Sekme uyku modu (bellek tasarrufu)
+- Lazy-load AI paneli
+- Favicon onbellek
+- Hafif QtWebEngine profili
+
 ## Guvenlik
 
 - DoNotTrack basligi varsayilan olarak etkin
