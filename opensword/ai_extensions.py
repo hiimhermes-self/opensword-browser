@@ -5,3 +5,4 @@
 # TODO: Sag tik AI aksiyonlari eklendi.
 # TODO: AI prompt sablonlari eklendi.
 # TODO: Ollama baglanti kontrolu eklendi.
+# TODO: API anahtari sifreli saklama eklendi.
