@@ -66,7 +66,7 @@
     "id": 10,
     "name": "tab_search",
     "title": "Sekme Hızlı Arama",
-    "status": "pending",
+    "status": "done",
     "description": "Ctrl+Shift+F ile açılan sekmeler arasında arama."
   },
   {
