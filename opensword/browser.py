@@ -418,21 +418,25 @@ class BrowserWindow(QMainWindow):
             tab.load(QUrl(text))
 
     def go_back(self):
+        """Onceki sayfaya doner."""
         tab = self.current_tab()
         if tab:
             tab.back()
 
     def go_forward(self):
+        """Sonraki sayfaya gider."""
         tab = self.current_tab()
         if tab:
             tab.forward()
 
     def reload_page(self):
+        """Sayfayi yeniler."""
         tab = self.current_tab()
         if tab:
             tab.reload()
 
     def go_home(self):
+        """Ana sayfaya gider."""
         self.add_tab(self.settings_data.get("home", "https://duckduckgo.com"))
 
     def tab_changed(self, idx):
