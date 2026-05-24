@@ -6,3 +6,4 @@
 # Sifre yoneticisi taslagi eklendi.
 # Sertifika goruntuleyici yer tutucu.
 # Cikista veri temizleme secenegi.
+# Parmak izi korumasi taslagi.
