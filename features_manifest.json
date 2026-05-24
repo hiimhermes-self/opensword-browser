@@ -52,7 +52,7 @@
     "id": 8,
     "name": "pdf_viewer",
     "title": "Yerel PDF Görüntüleyici",
-    "status": "pending",
+    "status": "done",
     "description": "PDF dosyalarını harici uygulama yerine tarayıcıda aç."
   },
   {
