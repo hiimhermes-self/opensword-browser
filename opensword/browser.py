@@ -596,6 +596,14 @@ class BrowserWindow(QMainWindow):
             self.statusBar().hide()
             self.toolbar.hide()
 
+    def save_page(self):
+        tab = self.current_tab()
+        if tab:
+            path, _ = QFileDialog.getSaveFileName(self, "Sayfayi Kaydet", "page.mhtml")
+            if path:
+                tab.page().save(path, format=QWebEngineDownloadRequest.MimeHtmlSaveFormat)
+                self.status.showMessage(f"Sayfa kaydedildi: {path}", 3000)
+
     def dev_tools(self):
         tab = self.current_tab()
         if tab:
