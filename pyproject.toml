@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opensword-browser"
+version = "0.1.0"
+description = "Open-source AI-native web browser"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.10"
+dependencies = ["PySide6>=6.5.0"]
+
+[project.scripts]
+opensword = "opensword.browser:main"
