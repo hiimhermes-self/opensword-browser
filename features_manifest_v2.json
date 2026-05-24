@@ -1,0 +1,32 @@
+[
+  {
+    "id": 101,
+    "name": "sync_bookmarks",
+    "title": "Yer imleri senkronizasyonu",
+    "status": "pending"
+  },
+  {
+    "id": 102,
+    "name": "night_reader",
+    "title": "Gece okuma modu",
+    "status": "pending"
+  },
+  {
+    "id": 103,
+    "name": "tab_groups",
+    "title": "Sekme gruplari",
+    "status": "pending"
+  },
+  {
+    "id": 104,
+    "name": "built_in_vpn",
+    "title": "Yerel VPN entegrasyonu",
+    "status": "pending"
+  },
+  {
+    "id": 105,
+    "name": "rss_reader",
+    "title": "RSS okuyucu",
+    "status": "pending"
+  }
+]
