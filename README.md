@@ -71,7 +71,11 @@ Sağ panelden API sağlayıcınızı ve anahtarınızı yapılandırın. Yakınd
 
 ---
 
-## 📁 Proje Yapısı
+## Ekran Goruntuleri
+
+![OpenSword Hizli Erisim](docs/screenshot.png)
+
+## Proje Yapisi
 
 ```
 opensword-browser/
