@@ -75,6 +75,19 @@ Sağ panelden API sağlayıcınızı ve anahtarınızı yapılandırın. Yakınd
 
 ![OpenSword Hizli Erisim](docs/screenshot.png)
 
+
+## Mimari
+
+OpenSword, moduler bir yapiya sahiptir:
+
+- **opensword/browser.py**: Ana pencere ve sekme yonetimi
+- **opensword/ai_panel.py**: AI entegrasyonu (planlandi)
+- **opensword/themes.py**: Tema motoru
+- **opensword/history.py**: Gecmis yonetimi
+- **opensword/downloads.py**: Indirme yoneticisi
+- **opensword/utils.py**: Yardimci fonksiyonlar
+- **opensword/constants.py**: Uygulama sabitleri
+
 ## Proje Yapisi
 
 ```
