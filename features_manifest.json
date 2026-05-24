@@ -59,7 +59,7 @@
     "id": 9,
     "name": "userscripts",
     "title": "Userscript Desteği",
-    "status": "pending",
+    "status": "done",
     "description": "Greasemonkey tarzı kullanıcı betikleri çalıştır."
   },
   {
