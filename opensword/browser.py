@@ -325,6 +325,7 @@ class BrowserWindow(QMainWindow):
         QShortcut(QKeySequence("Ctrl+D"), self).activated.connect(self.add_bookmark)
         QShortcut(QKeySequence("Ctrl+L"), self).activated.connect(self.address_bar.setFocus)
         QShortcut(QKeySequence("F12"), self).activated.connect(self.dev_tools)
+        QShortcut(QKeySequence("Ctrl+F"), self).activated.connect(self.show_find_bar)
 
         self.closed_tabs = []
         self.add_tab(self.settings_data.get("home", "https://duckduckgo.com"))
@@ -560,6 +561,22 @@ class BrowserWindow(QMainWindow):
         tab = self.current_tab()
         if tab:
             tab.setZoomFactor(max(0.25, tab.zoomFactor() - 0.1))
+
+    def show_find_bar(self):
+        from PySide6.QtWidgets import QLineEdit, QHBoxLayout, QWidget
+        if not hasattr(self, "_find_bar"):
+            self._find_bar = QWidget(self)
+            layout = QHBoxLayout(self._find_bar)
+            layout.setContentsMargins(4, 2, 4, 2)
+            self._find_input = QLineEdit()
+            self._find_input.setPlaceholderText("Sayfada ara...")
+            self._find_input.setStyleSheet("background:#222;color:#eee;padding:4px;")
+            self._find_input.returnPressed.connect(lambda: self.current_tab().page().findText(self._find_input.text()))
+            layout.addWidget(self._find_input)
+            self.browser_container.layout().addWidget(self._find_bar)
+        self._find_bar.setVisible(not self._find_bar.isVisible())
+        if self._find_bar.isVisible():
+            self._find_input.setFocus()
 
     def dev_tools(self):
         tab = self.current_tab()
