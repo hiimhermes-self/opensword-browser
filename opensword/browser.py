@@ -315,6 +315,7 @@ class BrowserWindow(QMainWindow):
 
         # Shortcuts
         QShortcut(QKeySequence("Ctrl+T"), self).activated.connect(lambda: self.add_tab())
+        QShortcut(QKeySequence("Ctrl+N"), self).activated.connect(lambda: BrowserWindow().show())
         QShortcut(QKeySequence("Ctrl+W"), self).activated.connect(lambda: self.close_tab(self.tabs.currentIndex()))
         QShortcut(QKeySequence("Ctrl+Shift+T"), self).activated.connect(self.restore_last_tab)
         QShortcut(QKeySequence("Ctrl+Tab"), self).activated.connect(self.next_tab)
