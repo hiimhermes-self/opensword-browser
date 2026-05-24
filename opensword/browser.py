@@ -25,7 +25,7 @@ BOOKMARKS_FILE = CONFIG_DIR / "bookmarks.json"
 SETTINGS_FILE = CONFIG_DIR / "settings.json"
 
 
-def load_json(path, default=None):
+def load_json(path: Path, default=None) -> dict:
     if path.exists():
         try:
             with open(path, "r", encoding="utf-8") as f:
@@ -35,7 +35,7 @@ def load_json(path, default=None):
     return default if default is not None else {}
 
 
-def save_json(path, data):
+def save_json(path: Path, data: dict) -> None:
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
@@ -397,10 +397,10 @@ class BrowserWindow(QMainWindow):
         idx = (self.tabs.currentIndex() - 1) % self.tabs.count()
         self.tabs.setCurrentIndex(idx)
 
-    def current_tab(self):
+    def current_tab(self) -> 'WebTab':
         return self.tabs.currentWidget()
 
-    def current_url(self):
+    def current_url(self) -> str:
         tab = self.current_tab()
         return tab.url().toString() if tab else ""
 
