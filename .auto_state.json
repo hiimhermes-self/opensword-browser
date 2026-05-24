@@ -1,10 +1,11 @@
 {
-  "cat_idx": 8,
+  "cat_idx": 9,
   "ui_idx": 1,
   "ai_idx": 1,
   "opt_idx": 1,
   "dev_idx": 1,
   "brand_idx": 1,
   "i18n_idx": 1,
-  "sec_idx": 1
+  "sec_idx": 1,
+  "proto_idx": 1
 }
