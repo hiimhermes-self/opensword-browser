@@ -1,4 +1,4 @@
 """OpenSword Browser — Açık kaynak, AI-native web tarayıcısı."""
-__version__ = "0.1.316"
+__version__ = "0.1.317"
 __author__ = "hiimhermes-self"
 __license__ = "Apache-2.0"
